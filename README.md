@@ -9,8 +9,8 @@ masterから派生したブランチ、featureブランチの派生元
 - feature/#issueID
 developから派生した機能開発全般のブランチ
 - hotifix/#issueID
-masterから派生したバグ修正用のブランチ
-#メッセージの書き方
+masterから派生したバグ修正用のブランチ  
+# メッセージの書き方
 https://qiita.com/itosho/items/9565c6ad2ffc24c09364
 
 題名↓
