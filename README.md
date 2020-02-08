@@ -67,4 +67,10 @@ developが最新状態になった。
 `git push --delete origin foo`  
 https://qiita.com/iorionda/items/c7e0aca399371068a9b8
 
+# 基本思想
+feature同士が依存しない単位でブランチ・イシューを切る。
+ブランチAがブランチBを依存してしまうことが開発途中で分かった場合、  
+1. ブランチBを一旦developにマージする
+2. developをブランチAにマージする
+3. ブランチAで開発再開。
 
