@@ -44,7 +44,7 @@ read.mdの追加
 `git branch feat/#1`  
 `git checkout feat/#1`  
 
-4. 開発ーーー開発完了  
+4. 開発ーーー開発完了ーーデバッグ・テスト  
 
 5. コミット&　メッセージ  
 `git add .`  
