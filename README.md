@@ -60,7 +60,7 @@ developが最新状態になった。
 8. ローカルdevelopを最新状態に更新  
 `git pull origin develop`  
 
-9. ローカル、リモートのfeat/#1ブランチを削除
+9. ローカル、リモートのfeat/#1ブランチを削除  
 ローカル：削除するブランチで  
 `git branch --delete foo`  
 リモート：  
