@@ -57,7 +57,7 @@ read.mdの追加
 githubにてdevelopにマージ  
 developが最新状態になった。  
 
-8. ローカルdevelopを最新状態に更新
+8. ローカルdevelopを最新状態に更新  
 `git pull origin develop`  
 
 9. ローカル、リモートのfeat/#1ブランチを削除
