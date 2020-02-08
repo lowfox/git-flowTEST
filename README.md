@@ -31,37 +31,36 @@ issue:#1
 
 read.mdの追加
 
-# 使い方
+# 使い方  
 
-例：機能追加
+例：機能追加  
 
-issueを作成
+1. issueを作成  
 
-ローカルdevelopを最新にする
-git pull origin develop
+2. ローカルdevelopを最新にする  
+`git pull origin develop`  
 
-developからfeatブランチを作成
-git branch feat/#1
-git checkout feat/#1
+3. developからfeatブランチを作成  
+`git branch feat/#1`  
+`git checkout feat/#1`  
 
-開発ーーー開発完了
+4. 開発ーーー開発完了  
 
-コミット&　メッセージ
-git add .
-git commit
+5. コミット&　メッセージ  
+`git add .`  
+`git commit`  
 
-同じブランチ名でリモートにプッシュ
-git push origin feat/#1
+6. 同じブランチ名でリモートにプッシュ  
+`git push origin feat/#1`  
 
-githubにてリモートのfeat/#1からdevelopにプルリクエスト
+7. githubにてリモートのfeat/#1からdevelopにプルリクエスト  
+githubにてdevelopにマージ  
+developが最新状態になった。  
 
-githubにてdevelopにマージ
-developが最新状態になった。
+8. ローカルdevelopを最新状態に更新
+`git pull origin develop`  
 
-ローカルdevelopを最新状態に更新
-git pull origin develop
-
-ローカル、リモートのfeat/#1ブランチを削除
+9. ローカル、リモートのfeat/#1ブランチを削除
 
 
 
