@@ -68,9 +68,22 @@ developが最新状態になった。
 https://qiita.com/iorionda/items/c7e0aca399371068a9b8
 
 # 基本思想
-feature同士が依存しない単位でブランチ・イシューを切る。
+feature同士が依存しない単位でブランチ・イシューを切る。  
 ブランチAがブランチBを依存してしまうことが開発途中で分かった場合、  
 1. ブランチBを一旦developにマージする
 2. developをブランチAにマージする
 3. ブランチAで開発再開。
 
+# git stash
+あるブランチの開発中に、別のブランチの手直しをしたくなった時には、git stashコマンドを使ってcommit前の変更を退避させる必要がある。そうしないと、他のブランチに切り替えた時に変更が失われることがあるから。    
+
+例えば、feature/Aブランチの開発中にfeature/Bブランチに手を加えたくなったときは、  
+
+`git stash save -u  # feature/Aブランチのcommit前の変更を退避する`  
+`git checkout feature/B  # feature/Bブランチに入る`  
+`...                     # feature/Bブランチで作業をする`  
+`git checkout feature/A  # feature/Aブランチに戻る`  
+`git stash pop      # feature/Aブランチの状態を復元する`  
+というようにする。
+
+>ここで、git stashコマンドに-uオプションをつけるのを忘れないこと。このオプションで、indexに登録前の(ie. untrackedな)変更も退避することを支持している。オプションをつけ忘れると、indexに登録されていない変更は失われるかもしれない。そして、そうやって失った変更は復元することができないので、もう一度書き直すしかなくなる。
